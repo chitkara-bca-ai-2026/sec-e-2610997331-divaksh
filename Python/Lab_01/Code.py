@@ -1,0 +1,17 @@
+tuition_fee = float(input("Enter Tuition Fee: "))
+lab_fee = float(input("Enter Lab fee: "))
+library_fee = float(input("Enter Library Fee: "))
+exam_fee = float(input("Enter Exam Fee: "))
+discount_amount = float(input("Enter Discount Amount: "))
+
+print(f"\n")
+print(f"Tuition Fee: {tuition_fee}")
+print(f"Lab Fee: {lab_fee}")
+print(f"Library Fee: {library_fee}")
+print(f"Exam Fee: {exam_fee}")
+print(f"Total Fee: {tuition_fee + lab_fee + library_fee + exam_fee}")
+print(f"Discount: {discount_amount}")
+print(f"Fee After Discount: {tuition_fee + lab_fee + library_fee + exam_fee - discount_amount}")
+fee_after_discount = tuition_fee + lab_fee + library_fee + exam_fee - discount_amount
+print(f"Annual Fee: {fee_after_discount * 2}")
+print(f"Monthly Installment: {fee_after_discount / 6}")
